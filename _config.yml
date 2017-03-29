@@ -69,7 +69,7 @@ theme: yilia
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/fredwei/fredwei.github.io.git
+  repo: git@github.com:fredwei/fredwei.github.io.git
   branch: master
 
 
