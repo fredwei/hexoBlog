@@ -72,8 +72,11 @@ deploy:
   repo: git@github.com:fredwei/fredwei.github.io.git
   branch: master
 
-
-
+# server
+server:
+  port: 5000
+  compress: true
+  header: true
 
 jsonContent:
     meta: false
