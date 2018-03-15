@@ -1,5 +1,27 @@
 # hexoBlog
 
+##几个常用的hexo命令
+hexo new "postName"             // 新建文章
+hexo new page "pageName"        // 新建页面
+hexo clean                      // 清理目录
+hexo generate                   // 生成静态页面至public目录
+hexo server                     //开启预览访问端口（默认端口4000，'ctrl + c'关闭server）
+hexo deploy                     // 将.deploy目录部署到GitHub
+
+### 以上命令对应的简写
+hexo n
+hexo clean
+hexo g
+hexo s
+hexo d
+
+### 当然，每次一个命令也是比较烦的，尤其是调试效果的时候，所以可以这样
+hexo s -g                       // 先生成再启动
+hexo s -g -p 5000               // 先生成再启动，端口使用5000
+
+这里调试的时候直接刷新页面就可以看到更新，之前不知道净关闭，重启了。也是醉了！
+如果写个脚本来执行也可以。
+
 ## hexo
 npm install hexo -g #安装  
 npm update hexo -g #升级  

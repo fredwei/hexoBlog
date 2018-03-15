@@ -4,8 +4,8 @@
 
 # Site
 title: Fred's Blog
-subtitle: fred的个人博客
-description: 欢迎访问我的博客
+subtitle: 佛系web前端开发者
+description: Fred的个人博客，写一写一些乱七八糟并没有人看的东西
 author: FredWei
 language: zh-CN
 timezone: Asia/Shanghai
@@ -71,6 +71,11 @@ deploy:
   type: git
   repo: git@github.com:fredwei/fredwei.github.io.git
   branch: master
+
+flowchart:
+  # raphael:   # optional, the source url of raphael.js 
+  # flowchart: # optional, the source url of flowchart.js 
+  options: # options used for `drawSVG` 
 
 # server
 server:

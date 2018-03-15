@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://fredwei.com">
   <title>Fred&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="欢迎访问我的博客">
+  <meta name="description" content="Fred的个人博客，写一写一些乱七八糟并没有人看的东西">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Fred's Blog">
 <meta property="og:url" content="http://fredwei.com/index.html">
 <meta property="og:site_name" content="Fred's Blog">
-<meta property="og:description" content="欢迎访问我的博客">
+<meta property="og:description" content="Fred的个人博客，写一写一些乱七八糟并没有人看的东西">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fred's Blog">
-<meta name="twitter:description" content="欢迎访问我的博客">
+<meta name="twitter:description" content="Fred的个人博客，写一写一些乱七八糟并没有人看的东西">
   
   
     <link rel="icon" href="/images/avatar.jpg">
@@ -49,7 +49,7 @@
 		  <h1 class="header-author"><a href="/">FredWei</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">fred的个人博客</p>
+		<p class="header-subtitle">佛系web前端开发者</p>
 		
 
 		<nav class="header-menu">
@@ -101,7 +101,7 @@
 			  <h1 class="header-author js-header-author">FredWei</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>fred的个人博客<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>佛系web前端开发者<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -143,6 +143,718 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-使用-vue-element-admin-开发一个后台管理——发布上线" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——发布上线/">使用 vue-element-admin 开发一个后台管理——发布上线</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——发布上线/" class="archive-article-date">
+  	<time datetime="2018-03-15T02:41:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本地开发完成，接着就需要上传到外网环境，让测试的童鞋来做测试了。</p>
+        
+          <a class="article-more-a" href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——发布上线/#more">展开全文 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">admin</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">element</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/教程/" class="article-tag-list-link color3">教程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-使用-vue-element-admin-开发一个后台管理——接口联调" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——接口联调/">使用 vue-element-admin 开发一个后台管理——接口联调</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——接口联调/" class="archive-article-date">
+  	<time datetime="2018-03-15T02:41:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在本地开发环境也是可以与后台服务器接口进行调试的，需要解决的问题就是跨域问题。如果是线上的跨越问题，解决办法有很多，常用的有<code>CORS</code>，全称为 Cross Origin Resource Sharing（跨域资源共享），这种方案工作量基本都在后端那里，在此不多介绍。</p>
+        
+          <a class="article-more-a" href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——接口联调/#more">展开全文 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">admin</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">element</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/教程/" class="article-tag-list-link color3">教程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-使用-vue-element-admin-开发一个后台管理——新建栏目" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——新建栏目/">使用 vue-element-admin 开发一个后台管理——新建栏目</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——新建栏目/" class="archive-article-date">
+  	<time datetime="2018-03-15T02:40:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><code>vue-el-admin-tpl</code>中默认一个栏目中有三个页面，分别是列表、新增、编辑，其中新增跟编辑使用同一个模版。如有其他页面，可以自行添加。</p>
+        
+          <a class="article-more-a" href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——新建栏目/#more">展开全文 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">admin</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">element</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/教程/" class="article-tag-list-link color3">教程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-使用-vue-element-admin-开发一个后台管理——首页" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——首页/">使用 vue-element-admin 开发一个后台管理——首页</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——首页/" class="archive-article-date">
+  	<time datetime="2018-03-15T02:39:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>首页只保留了几个统计数据跟一个线形图表，这一块可以参考<a href="http://panjiachen.github.io/vue-element-admin">vue-element-admin</a>，根据业务需要自行定义页面元素。</p>
+        
+          <a class="article-more-a" href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——首页/#more">展开全文 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">admin</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">element</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/教程/" class="article-tag-list-link color3">教程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-使用-vue-element-admin-开发一个后台管理——登录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——登录/">使用 vue-element-admin 开发一个后台管理——登录</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——登录/" class="archive-article-date">
+  	<time datetime="2018-03-15T02:37:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在开发的阶段，要一直在服务器环境下进行开发，所以要先执行<code>npm run dev</code>启动本地虚拟服务，接着就可以愉快的敲代码了。</p>
+        
+          <a class="article-more-a" href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——登录/#more">展开全文 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">admin</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">element</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/教程/" class="article-tag-list-link color3">教程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-使用-vue-element-admin-开发一个后台管理——国际化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——国际化/">使用 vue-element-admin 开发一个后台管理——国际化</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——国际化/" class="archive-article-date">
+  	<time datetime="2018-03-15T02:33:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://panjiachen.github.io/vue-element-admin">vue-element-admin</a>的默认语言是英文，在这里我已经把默认语言改成中文了，需要修改的地方比较分散，在这里不展开来讲。</p>
+        
+          <a class="article-more-a" href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——国际化/#more">展开全文 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">admin</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">element</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/教程/" class="article-tag-list-link color3">教程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-使用-vue-element-admin-开发一个后台管理——mock数据" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——mock数据/">使用 vue-element-admin 开发一个后台管理——mock数据</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——mock数据/" class="archive-article-date">
+  	<time datetime="2018-03-15T02:28:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>自从有了前后端分离的概念，前端模拟数据这一块就出了很多方案，mock无疑是一个很好的选择。</p>
+        
+          <a class="article-more-a" href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——mock数据/#more">展开全文 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">admin</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">element</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/教程/" class="article-tag-list-link color3">教程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-使用-vue-element-admin-开发一个后台管理——接口约定" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——接口约定/">使用 vue-element-admin 开发一个后台管理——接口约定</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——接口约定/" class="archive-article-date">
+  	<time datetime="2018-03-15T02:27:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>约定接口往往是项目开始之前要做的事情，当然实际是很多时候都是边写边确定，只有数据格式约定好，那么后续的开发就可以做到两翼齐飞了~</p>
+        
+          <a class="article-more-a" href="/2018/03/15/使用-vue-element-admin-开发一个后台管理——接口约定/#more">展开全文 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">admin</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">element</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/教程/" class="article-tag-list-link color3">教程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-使用-vue-element-admin-开发一个后台管理——初始化" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/12/使用-vue-element-admin-开发一个后台管理——初始化/">使用 vue-element-admin 开发一个后台管理——初始化</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/12/使用-vue-element-admin-开发一个后台管理——初始化/" class="archive-article-date">
+  	<time datetime="2018-03-12T03:41:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在学习和使用<code>vue-element-admin</code>过程中遇到蛮多的问题的，主要是模板跟业务相关性有所出入，熟悉及调整的时候花费了不少时间。基于<code>vue-element-admin</code>进行二次开发，产出<code>vue-el-admin-tpl</code>。</p>
+<p>这一系列的教程只针对有一些<code>vue</code>开发基础的童鞋，篇幅有限，教程有很多细节的不会展开来说。</p>
+        
+          <a class="article-more-a" href="/2018/03/12/使用-vue-element-admin-开发一个后台管理——初始化/#more">展开全文 >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">admin</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">element</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/教程/" class="article-tag-list-link color3">教程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
   
     <article id="post-hexo本地开发时默认的4000端口无法访问" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -217,509 +929,10 @@
 
 
   
-    <article id="post-workers" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/25/workers/">Web Worker</a>
-    </h1>
-  
-
-        
-        <a href="/2017/05/25/workers/" class="archive-article-date">
-  	<time datetime="2017-05-25T04:26:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>总所周知，javascript是单线程的，当一个函数执行的时候，JS引擎会锁住DOM树，其他事件的响应代码只能在队列中等待，并且此时页面卡死。<br>如果某些脚本比较复杂、耗时，那么将会阻塞javascript继续执行，甚至导致浏览器失去响应。<br>那么要实现javascript的多线程，ajax异步请求可以开辟一个新的线程来处理请求的业务，并不是真正意义上的多线程。<br>在HTML5中，引入了Web Worker这个概念，它能够在另外一个线程中执行计算密集的JS代码而不引起页面卡死，这是真正的多线程。</p>
-        
-          <a class="article-more-a" href="/2017/05/25/workers/#more">展开全文 >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">html5</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">workers</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">web api</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/分享/" class="article-tag-list-link color3">分享</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-添加自定义域名" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/12/添加自定义域名/">在 github pages 添加自定义域名</a>
-    </h1>
-  
-
-        
-        <a href="/2017/05/12/添加自定义域名/" class="archive-article-date">
-  	<time datetime="2017-05-12T03:16:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-12</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在github上搭建静态页面博客，会得到一个可在线访问的地址，例如我的博客地址是<code>fredwei.github.io</code>。</p>
-<p>显然这个地址比较难记，不过github允许用户绑定自定义域名。</p>
-        
-          <a class="article-more-a" href="/2017/05/12/添加自定义域名/#more">展开全文 >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">github pasges</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">cname</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-vuejs基础入门" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/26/vuejs基础入门/">vuejs基础入门</a>
-    </h1>
-  
-
-        
-        <a href="/2017/04/26/vuejs基础入门/" class="archive-article-date">
-  	<time datetime="2017-04-26T02:34:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-26</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>为什么要学习vuejs？因为这两年vuejs蛮火的，而且易入门，实用。<br>vuejs 是一套构建用户界面的 渐进式框架。<br>vuejs 的目标是通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件。<br>vuejs 现在不支持IE8及以下，以后也不会支持。</p>
-        
-          <a class="article-more-a" href="/2017/04/26/vuejs基础入门/#more">展开全文 >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">vuejs</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/学习/" class="article-tag-list-link color3">学习</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/笔记/" class="article-tag-list-link color3">笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-h5唤醒App" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/13/h5唤醒App/">h5唤醒App</a>
-    </h1>
-  
-
-        
-        <a href="/2017/04/13/h5唤醒App/" class="archive-article-date">
-  	<time datetime="2017-04-13T05:37:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>首先要声明的一点是，h5页面无法获取app的状态，也就是说，无法判断app是否已下载，app是否已打开。<br>那么基于这个，怎么样实现在h5页面唤醒指定的app呢？<br>请看下回分解~</p>
-        
-          <a class="article-more-a" href="/2017/04/13/h5唤醒App/#more">展开全文 >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-使用webpack构建时给window绑定事件的坑" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/28/使用webpack构建时给window绑定事件的坑/">使用webpack构建时给window绑定事件的坑</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/28/使用webpack构建时给window绑定事件的坑/" class="archive-article-date">
-  	<time datetime="2017-03-28T07:45:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>使用webpack进行构建，给window绑定了onload的事件，结果竟然死活不触发！各种排除后发现问题所在…</p>
-        
-          <a class="article-more-a" href="/2017/03/28/使用webpack构建时给window绑定事件的坑/#more">展开全文 >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">webpack</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jquery</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/填坑/" class="article-tag-list-link color3">填坑</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-使用hexo遇到的一个坑" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/23/使用hexo遇到的一个坑/">使用hexo遇到的一个坑</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/23/使用hexo遇到的一个坑/" class="archive-article-date">
-  	<time datetime="2017-03-23T03:46:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>hexo中首页列表的摘要（excerpt）弄不出来，一直显示全文</p>
-<p>修改了N多配置都不生效，官方文档中也没有说明，唯有各种搜索答案，终于找到了！</p>
-        
-          <a class="article-more-a" href="/2017/03/23/使用hexo遇到的一个坑/#more">展开全文 >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/填坑/" class="article-tag-list-link color3">填坑</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-express路由" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/22/express路由/">Express路由</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/22/express路由/" class="archive-article-date">
-  	<time datetime="2017-03-22T08:11:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="一、简介"><a href="#一、简介" class="headerlink" title="一、简介"></a>一、简介</h2><blockquote>
-<p>1、Express 是一个基于 Node.js 平台的极简、灵活的web应用开发框架，它提供一系列强大的特性，帮助你创建各种 Web 和移动设备应用。</p>
-<p>2、丰富的 HTTP 快捷方法和任意排列组合的 Connect 中间件，让你创建健壮、友好的 API 变得既快速又简单。 （ Express 是一个自身功能极简，完全是由路由和中间件构成一个的 web 开发框架）</p>
-<p>3、Express 不对 Node.js 已有的特性进行二次抽象，我们只是在它之上扩展了 Web 应用所需的基本功能。</p>
-</blockquote>
-<p>&nbsp;</p>
-        
-          <a class="article-more-a" href="/2017/03/22/express路由/#more">展开全文 >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">nodejs</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">express</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">router</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/分享/" class="article-tag-list-link color3">分享</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
@@ -730,7 +943,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		Copyright &copy; 2017 FredWei All Rights Reserved. <a href="http://www.miitbeian.gov.cn" rel="nofollow" target="_blank"> 粤ICP备15030311号-1</a>
+    		Copyright &copy; 2018 FredWei All Rights Reserved. <a href="http://www.miitbeian.gov.cn" rel="nofollow" target="_blank"> 粤ICP备15030311号-1</a>
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -817,6 +1030,14 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jquery</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">vuejs</a>
               </li>
              
@@ -845,11 +1066,15 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jquery</a>
+                <a href="javascript:void(0)" class="js-tag color1">admin</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">element</a>
               </li>
             
             <div class="clearfix"></div>
@@ -900,7 +1125,7 @@
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">什么都还没有</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">一个向往自由开发的web前端开发</div>
   	  	
     	</section>
     
